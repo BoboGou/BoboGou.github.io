@@ -9,10 +9,17 @@
 		<a class="active" href="/index.html">Home</a>
 		<a href="#">58 Deli</a>
 		<a href="#">Bobo's Diary</a>
-		<a class="login" href="#">Login</a>
+		<a class="login" href="#" id="login-button" onclick="toggle_login_form()">Login</a>
 	</div>
 	<div class="title-div">
 		<h1 class="title">Family @ 58 Parkview Circle</h1>
+	</div>
+	<div class="login-page" id="login-form">
+		<form style="padding-left:1em;" action="http://184.72.102.191:3000/login" method="post" enctype="application/x-www-form-urlencoded">
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" placeholder="Password">
+			<button type="submit">Login</button>
+		</form>
 	</div>
 	<div class="image-grid">
 		<div class="image-grid-div">
@@ -62,5 +69,5 @@
 		</div>
 	</div>
 </body>
-
+<script src="js/home.js"></script>
 </html>

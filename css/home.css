@@ -119,3 +119,16 @@ p {
 	float: right;
 	right: 10em;
 }
+
+.login-page {
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 1em;
+	width: 21em;
+	height: 3em;
+	position: fixed;
+	float: right;
+	padding-top: 1em;
+	top: 2em;
+	right: 0em;
+	display: none;
+}
