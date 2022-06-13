@@ -114,3 +114,8 @@ p {
 	text-align: center;
 	line-height: 0.5em;
 }
+
+.menu-bar a.login {
+	float: right;
+	right: 10em;
+}
