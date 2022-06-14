@@ -1,0 +1,46 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="/css/home.css">
+	<link rel="stylesheet" href="/css/deli.css">
+</head>
+
+<body>
+	<div class="menu-bar">
+		<a class="active" href="/index.html">Home</a>
+		<a href="/pages/deli.html">58 Deli</a>
+		<a href="#">Bobo's Diary</a>
+		<a class="login" href="#" id="login-button" onclick="toggle_login_form()">Login</a>
+	</div>
+	<div class="title-div">
+		<h1 class="title">Food @ 58 Parkview Circle</h1>
+	</div>
+	<div class="login-page" id="login-form">
+		<form style="padding-left:1em;" action="http://34.203.203.253:3000/login" method="post"
+			enctype="application/x-www-form-urlencoded">
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" placeholder="Password">
+			<button type="submit">Login</button>
+		</form>
+	</div>
+	<div class="form-popup-bg" id="login-error-div">
+		<div class="form-container">
+			<button id="btnCloseForm" class="close-button" onclick="toggle_login_error_div()">X</button>
+			<p style="text-align: center"> Your password is incorrect! </p>
+		</div>
+	</div>
+	<!-- galary -->
+	<div class="food-calendar">
+		<div class="responsive">
+			<div class="gallery">
+				<a target="_blank" href="/images/food/sample_food.jpg">
+					<img src="/images/food/sample_food.jpg" alt="Cinque Terre" width="600" height="400">
+				</a>
+				<div class="desc">Add a date here</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="/js/home.js"></script>
+
+</html>
