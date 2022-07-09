@@ -10,7 +10,7 @@ upload_img.addEventListener("click", function(event){
 });
 
 function toggle_submit_button(){
-	upload_submit.classList.toggle('invisible')
+	upload_submit.classList.remove('invisible')
 }
 
 function is_logged_in(){
