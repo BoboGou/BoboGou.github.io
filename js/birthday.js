@@ -11,11 +11,14 @@ var birthday_text = document.getElementById("birthday_text")
 var birthday_close = document.getElementById("birthday_close")
 
 function display_birthday(){
-	var dateObj = new Date();
-	var month = dateObj.getUTCMonth() + 1; //months from 1-12
-	var day = dateObj.getUTCDate();
+	let options = {
+		timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+		month: 'numeric',
+		day: 'numeric',
+	},
+	formatter = new Intl.DateTimeFormat([], options);
+	let today = formatter.format(new Date());
 
-	let today = month + "/" + day;
 	let person = birthdays[today]
 	if (person) {
 		birthday_block.style.display = "block"
